@@ -64,6 +64,11 @@ class FrenchDeck:
         # Enable indexing and slicing (deck[0], deck[1:5], etc.)
         return self._cards[position]
     
+    def __repr__(self):
+        # Return a string representation that could recreate the object
+        # Following Python convention: repr should be unambiguous and ideally executable
+        return f'FrenchDeck()'
+    
     def spades_high(self, card):
         # Calculate card value with spades being highest suit
         # rank_value: position of rank in ranks list (2=0, 3=1, ..., A=12)
